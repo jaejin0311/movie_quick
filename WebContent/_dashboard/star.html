@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="movie.html">Add a Movie</a></li>
+    <li><a href="star.html">Add a Star</a></li>
+    <li><a href="genre.html">Add a Genre</a></li>
+    <li><a href="#">Browsing Movie</a></li>
+  </ul>
+</header>
+
+<h1>Add a Star</h1>
+
+<br>
+<br>
+
+<h3>New Star Details</h3>
+
+<form id="star_form" method="post" action="#">
+  <label><b>Star Name</b></label>
+  <label>
+    <input name="starName" placeholder="Star Name" type="text">
+  </label>
+  <br>
+  <label><b>Birth Year</b></label>
+  <label>
+    <input name="birthYear" placeholder="Birth Year" type="number">
+  </label>
+  <br>
+  <input type="submit" value="add_star">
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="star.js"></script>
+</body>
+</html>

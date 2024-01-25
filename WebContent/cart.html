@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="table.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Top 20 Movie List</title>
+</head>
+<body>
+<header>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="movie-list.html">Top20</a></li>
+    <li><a href="cart.html">Checkout</a></li>
+  </ul>
+</header>
+<h1>Movie Search</h1>
+<form id="searchForm">
+  <input type="text" id="title" name="title" placeholder="Title">
+  <input type="text" id="year" name="year" placeholder="Year">
+  <input type="text" id="director" name="director" placeholder="Director">
+  <input type="text" id="starName" name="starName" placeholder="Star Name">
+  <button type="submit">Search</button>
+</form>
+
+<h4 style="margin-left: 10%; margin-top: 2%; font-weight: bold;">Cart</h4>
+<table id=movie_table class="table table-hover">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Quantity</th>
+    <th>Delete</th>
+    <th>Price</th>
+    <th>Total</th>
+  </tr>
+  </thead>
+
+  <!-- Table body is left empty here, will be populated with the data retrieved with single-movie.js -->
+  <!-- single-movie.js will find this html element by its id "movie_table_body" -->
+
+  <tbody id=movie_table_body></tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

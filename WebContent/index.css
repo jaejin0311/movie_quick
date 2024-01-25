@@ -1,0 +1,38 @@
+/* Style for the genre buttons */
+#searchForm {
+    text-align: center;
+    align-items: center;
+}
+
+
+.genre-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Center-align the genre buttons */
+.genre-button-container {
+    text-align: center;
+}
+
+/* Style for the prefix buttons */
+.prefix-button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Center-align the prefix buttons */
+.prefix-button-container {
+    text-align: center;
+}
+

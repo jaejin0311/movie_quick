@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="movie.html">Add a Movie</a></li>
+    <li><a href="star.html">Add a Star</a></li>
+    <li><a href="genre.html">Add a Genre</a></li>
+    <li><a href="#">Browsing Movie</a></li>
+  </ul>
+</header>
+
+<h1>Add a Movie</h1>
+
+<br>
+<br>
+
+<h3>New Movie Details</h3>
+
+<form id="movie_form" method="post" action="#">
+  <label><b>Movie Title</b></label>
+  <label>
+    <input name="movieTitle" placeholder="Movie Title" type="text">
+  </label>
+  <br>
+
+  <label><b>Movie Year</b></label>
+  <label>
+    <input name="movieYear" placeholder="Year" type="number">
+  </label>
+  <br>
+
+  <label><b>Director</b></label>
+  <label>
+    <input name="director" placeholder="Director" type="text">
+  </label>
+  <br>
+
+  <label><b>Star</b></label>
+  <label>
+    <input name="star" placeholder="Star" type="text">
+  </label>
+  <br>
+
+  <input type="submit" value="add_movie">
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="movie.js"></script>
+</body>
+</html>

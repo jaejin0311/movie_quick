@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="movie.html">Add a Movie</a></li>
+    <li><a href="star.html">Add a Star</a></li>
+    <li><a href="genre.html">Add a Genre</a></li>
+    <li><a href="#">Browsing Movie</a></li>
+  </ul>
+</header>
+
+<h1>Meta Data</h1>
+
+<br>
+<br>
+
+<h1>creditcards</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>VARCHAR</td>
+  </tr>
+  <tr>
+    <td>firstName</td>
+    <td>VARCHAR</td>
+  </tr>
+  <tr>
+    <td>lastName</td>
+    <td>VARCHAR</td>
+  </tr>
+  <tr>
+    <td>expiration</td>
+    <td>DATE</td>
+  </tr>
+</table>
+
+<h1>customers</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>INT</td>
+  </tr>
+  <tr>
+    <td>firstName</td>
+    <td>VARCHAR</td>
+  </tr>
+  <tr>
+    <td>lastName</td>
+    <td>VARCHAR</td>
+  </tr>
+  <tr>
+    <td>ccId</td>
+    <td>VARCHAR</td>
+  </tr>
+  <tr>
+    <td>address</td>
+    <td>VARCHAR</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>VARCHAR</td>
+  </tr>
+  <tr>
+    <td>password</td>
+    <td>VARCHAR</td>
+  </tr>
+</table>
+
+<h1>genres</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>INTEGER</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>VARCHAR(32)</td>
+  </tr>
+</table>
+
+<h1>genres_in_movies</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>genreId</td>
+    <td>INTEGER</td>
+  </tr>
+  <tr>
+    <td>movieId</td>
+    <td>VARCHAR(10)</td>
+  </tr>
+</table>
+
+<h1>movies</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>VARCHAR(10)</td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>VARCHAR(100)</td>
+  </tr>
+  <tr>
+    <td>year</td>
+    <td>INTEGER</td>
+  </tr>
+  <tr>
+    <td>director</td>
+    <td>VARCHAR(100)</td>
+  </tr>
+</table>
+
+<h1>ratings</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>movieId</td>
+    <td>VARCHAR(10)</td>
+  </tr>
+  <tr>
+    <td>rating</td>
+    <td>FLOAT</td>
+  </tr>
+  <tr>
+    <td>numVotes</td>
+    <td>INTEGER</td>
+  </tr>
+</table>
+
+<h1>sales</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>INTEGER</td>
+  </tr>
+  <tr>
+    <td>customerId</td>
+    <td>INTEGER</td>
+  </tr>
+  <tr>
+    <td>movieId</td>
+    <td>VARCHAR(10)</td>
+  </tr>
+  <tr>
+    <td>saleDate</td>
+    <td>DATE</td>
+  </tr>
+</table>
+
+<h1>stars</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>id</td>
+    <td>VARCHAR(10)</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>VARCHAR(100)</td>
+  </tr>
+  <tr>
+    <td>birthYear</td>
+    <td>INTEGER</td>
+  </tr>
+</table>
+
+<h1>stars_in_movies</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Attribute</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>starId</td>
+    <td>VARCHAR(10)</td>
+  </tr>
+  <tr>
+    <td>movieId</td>
+    <td>VARCHAR(10)</td>
+  </tr>
+</table>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

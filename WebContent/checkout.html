@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Store - Payment Page</title>
+</head>
+<body>
+<h1>Movie Store - Payment Page</h1>
+<form id="paymentForm" onsubmit="return false;">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required><br>
+
+    <label for="creditCard">Credit Card Number:</label>
+    <input type="text" id="creditCard" required><br>
+
+    <label for="expirationDate">Expiration Date:</label>
+    <input type="text" id="expirationDate" placeholder="MM/YYYY" required><br>
+
+    <button type="button" onclick="placeOrder()">Place Order</button>
+</form>
+
+<div id="errorContainer"></div>
+
+<script src="checkout.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

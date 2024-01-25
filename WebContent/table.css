@@ -1,0 +1,68 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+#movie_table {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border: 1px solid #ccc; /* Add a 1px solid border */
+    border-radius: 10px;
+    border-collapse: collapse;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+#movie_table thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+/*!* Style alternating rows in the table *!*/
+/*#movie_table tbody tr:nth-child(odd) {*/
+/*    background-color: #f2f2f2;*/
+/*}*/
+
+/* Style table cells */
+#movie_table td, #movie_table th {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    /*text-align: center;*/
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.title {
+    margin-left: 10%;
+}
+
+#searchForm {
+    text-align: center;
+    align-items: center;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Top 20 Movie List</title>
+</head>
+<body>
+<header>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="movie-list.html">Top20</a></li>
+        <li><a href="cart.html">Checkout</a></li>
+    </ul>
+</header>
+
+<div class="container">
+    <input type="text" name="hero" id="autocomplete"
+           class="autocomplete-searchbox form-control"
+           placeholder="Search Movies"/>
+    <button id = "fullTextSearch" type="submit">Search</button>
+</div>
+
+<h1 style="text-align: center">Movie Search</h1>
+<form id="searchForm">
+    <input type="text" id="title" name="title" placeholder="Title">
+    <input type="text" id="year" name="year" placeholder="Year">
+    <input type="text" id="director" name="director" placeholder="Director">
+    <input type="text" id="starName" name="starName" placeholder="Star Name">
+    <button type="submit">Search</button>
+</form>
+
+<div id="genre-button-container" class="genre-button-container">
+    <h1>Browsing by Movie Genres</h1>
+    <button class="genre-button" data-genre="1">Action</button>
+    <button class="genre-button" data-genre="2">Adult</button>
+    <button class="genre-button" data-genre="3">Adventure</button>
+    <button class="genre-button" data-genre="4">Animation</button>
+    <button class="genre-button" data-genre="5">Biography</button>
+    <button class="genre-button" data-genre="6">Comedy</button>
+    <button class="genre-button" data-genre="7">Crime</button>
+    <button class="genre-button" data-genre="8">Documentary</button>
+    <button class="genre-button" data-genre="9">Drama</button>
+    <button class="genre-button" data-genre="10">Family</button>
+    <button class="genre-button" data-genre="11">Fantasy</button>
+    <button class="genre-button" data-genre="12">History</button>
+    <button class="genre-button" data-genre="13">Horror</button>
+    <button class="genre-button" data-genre="14">Music</button>
+    <button class="genre-button" data-genre="15">Musical</button>
+    <button class="genre-button" data-genre="16">Mystery</button>
+    <button class="genre-button" data-genre="17">Reality-TV</button>
+    <button class="genre-button" data-genre="18">Romance</button>
+    <button class="genre-button" data-genre="19">Sci-FI</button>
+    <button class="genre-button" data-genre="20">Sport</button>
+    <button class="genre-button" data-genre="21">Thriller</button>
+    <button class="genre-button" data-genre="22">War</button>
+    <button class="genre-button" data-genre="23">Western</button>
+</div>
+<br>
+<br>
+
+<div id="prefix-button-container" class="prefix-button-container">
+    <h1>Browsing by Movie Title</h1>
+    <button class="prefix-button" data-prefix="a">A</button>
+    <button class="prefix-button" data-prefix="b">B</button>
+    <button class="prefix-button" data-prefix="c">C</button>
+    <button class="prefix-button" data-prefix="d">D</button>
+    <button class="prefix-button" data-prefix="e">E</button>
+    <button class="prefix-button" data-prefix="f">F</button>
+    <button class="prefix-button" data-prefix="g">G</button>
+    <button class="prefix-button" data-prefix="h">H</button>
+    <button class="prefix-button" data-prefix="i">I</button>
+    <button class="prefix-button" data-prefix="j">J</button>
+    <button class="prefix-button" data-prefix="k">K</button>
+    <button class="prefix-button" data-prefix="l">L</button>
+    <button class="prefix-button" data-prefix="m">M</button>
+    <button class="prefix-button" data-prefix="n">N</button>
+    <button class="prefix-button" data-prefix="m">M</button>
+    <button class="prefix-button" data-prefix="o">O</button>
+    <button class="prefix-button" data-prefix="p">P</button>
+    <button class="prefix-button" data-prefix="q">Q</button>
+    <button class="prefix-button" data-prefix="r">R</button>
+    <button class="prefix-button" data-prefix="s">S</button>
+    <button class="prefix-button" data-prefix="t">T</button>
+    <button class="prefix-button" data-prefix="u">U</button>
+    <button class="prefix-button" data-prefix="v">V</button>
+    <button class="prefix-button" data-prefix="w">W</button>
+    <button class="prefix-button" data-prefix="x">X</button>
+    <button class="prefix-button" data-prefix="y">Y</button>
+    <button class="prefix-button" data-prefix="z">Z</button>
+
+    <br>
+
+    <button class="prefix-button" data-prefix="0">0</button>
+    <button class="prefix-button" data-prefix="1">1</button>
+    <button class="prefix-button" data-prefix="2">2</button>
+    <button class="prefix-button" data-prefix="3">3</button>
+    <button class="prefix-button" data-prefix="4">4</button>
+    <button class="prefix-button" data-prefix="5">5</button>
+    <button class="prefix-button" data-prefix="6">6</button>
+    <button class="prefix-button" data-prefix="7">7</button>
+    <button class="prefix-button" data-prefix="8">8</button>
+    <button class="prefix-button" data-prefix="9">9</button>
+    <button class="prefix-button" data-prefix="*">*</button>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>

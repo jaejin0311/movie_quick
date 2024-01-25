@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border: 1px solid #ccc; /* Add a 1px solid border */
+    border-radius: 10px;
+    border-collapse: collapse;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Style table cells */
+.table td, .table th {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    /*text-align: center;*/
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+h1 {
+    margin-left: 10%;
+}
